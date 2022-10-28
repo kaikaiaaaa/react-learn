@@ -7,7 +7,7 @@ console.log('fetch',fetch);
 //创建响应式处理函数
 const checkStatus = res => {
 //  当请求！==200
-  if (200 >= res.status < 300) {
+  if (res.status === 200) {
     //  请求成功
     return res;
   }
