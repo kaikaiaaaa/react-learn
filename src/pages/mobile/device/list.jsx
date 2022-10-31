@@ -1,5 +1,6 @@
 import React from 'react';
 import './css/list.less';
+import propTypes from 'prop-types';
 
 let result = [
   {
@@ -35,5 +36,8 @@ const List = ({ history }) => {
     );
   }
 ;
+List.defaultProps = {
+  history: {},
+}
 
 export default List;
